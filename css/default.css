@@ -1,0 +1,46 @@
+/* NAVBAR */
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #222;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    padding: 15px 16px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar li a:hover {
+    background: #ddd;
+    color: #222;
+}
+
+
+/*GENERAL*/
+
+.margin-top-small {
+    margin-top: 8px;
+}
+
+.list li {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.list-inline {
+    padding-left: 0;
+}
+
+.list-inline li {
+    display: inline;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/default.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <ul class="navbar">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="register.html">Register</a>
+        </li>
+    </ul>
+
+    <h1>Registrarse</h1>
+    <form>
+        <div>
+            <input type="text" placeholder="Nombre" name="nombre" required>
+            <input type="text" placeholder="Apellido" name="apellido" required>
+            <input type="password" placeholder="Contraseña" name="password" required>
+        </div>
+
+        <div class="margin-top-small">
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="date" placeholder="Fecha de Nacimiento" name="birthday">
+            <input type="text" placeholder="Teléfono" name="phone">
+        </div>
+
+        <div class="margin-top-small">
+            <p>Género:</p>
+            <ul class="list list-inline">
+                <li><input type="radio" name="gender" value="hombre"> Hombre</li>
+                <li><input type="radio" name="gender" value="mujer"> Mujer</li>
+                <li><input type="radio" name="gender" value="otro"> Otro</li>
+            </ul>
+        </div>
+
+        <div class="margin-top-small">
+            <select name="empresa/profesional">
+                <option value="empresa">Empresa</option>
+                <option value="profesional">Profesional</option>
+            </select>
+        </div>
+
+        <div class="margin-top-small">
+            <input type="submit" value="Registrarse"> <input type="reset">
+        </div>
+    </form>
+</body>
+
+</html>
