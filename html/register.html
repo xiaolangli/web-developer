@@ -11,49 +11,80 @@
 </head>
 
 <body>
-    <ul class="navbar">
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="register.html">Register</a>
-        </li>
-    </ul>
+    <nav id="nav">
+        <ul class="navbar">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="jobs.html">Jobs</a>
+            </li>
+            <li>
+                <a href="objective.html">Objective</a>
+            </li>
+            <li>
+                <a href="references.html">Register</a>
+            </li>
+            <li>
+                <a href="register.html">Register</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1>Registrarse</h1>
+    </header>
+    <article id="article">
+        <form>
+            <div>
+                <input type="text" placeholder="Nombre" name="nombre" required>
+                <input type="text" placeholder="Apellido" name="apellido" required>
+                <input type="password" placeholder="Contraseña" name="password" min="6" max="12" required>
+            </div>
 
-    <h1>Registrarse</h1>
-    <form>
-        <div>
-            <input type="text" placeholder="Nombre" name="nombre" required>
-            <input type="text" placeholder="Apellido" name="apellido" required>
-            <input type="password" placeholder="Contraseña" name="password" required>
-        </div>
+            <div class="margin-top-small">
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="date" placeholder="Fecha de Nacimiento" name="birthday">
+                <input type="text" placeholder="Teléfono" name="phone">
+            </div>
 
-        <div class="margin-top-small">
-            <input type="email" placeholder="Email" name="email" required>
-            <input type="date" placeholder="Fecha de Nacimiento" name="birthday">
-            <input type="text" placeholder="Teléfono" name="phone">
-        </div>
+            <div class="margin-top-small">
+                <p>Género:</p>
+                <ul class="list list-inline">
+                    <li><input type="radio" name="gender" value="hombre"> Hombre</li>
+                    <li><input type="radio" name="gender" value="mujer"> Mujer</li>
+                    <li><input type="radio" name="gender" value="otro"> Otro</li>
+                </ul>
+            </div>
 
-        <div class="margin-top-small">
-            <p>Género:</p>
-            <ul class="list list-inline">
-                <li><input type="radio" name="gender" value="hombre"> Hombre</li>
-                <li><input type="radio" name="gender" value="mujer"> Mujer</li>
-                <li><input type="radio" name="gender" value="otro"> Otro</li>
+            <div class="margin-top-small">
+                <select name="empresa/profesional">
+                    <option value="empresa">Empresa</option>
+                    <option value="profesional">Profesional</option>
+                </select>
+            </div>
+
+            <div class="margin-top-small">
+                <input type="submit" value="Registrarse"> <input type="reset">
+            </div>
+        </form>
+    </article>
+    <footer class="grid" id="footer">
+        <section class="width-1-2">
+            <p>Datos de Contacto:</p>
+            <ul class="list">
+                <li>Mail: <a href="mailt:gabigrossi_1989@hotmail.com">gabigrossi_1989@hotmail.com</a></li>
+                <li>Celular: 15 5891-6270</li>
+                <li>Teléfono: 4765-3462</li>
             </ul>
-        </div>
+        </section>
+        <section class="width-1-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae, amet laborum et libero suscipit dolore enim quia velit. Nobis error cumque quibusdam amet officiis consectetur at accusantium cum laborum.</p>
+        </section>
+    </footer>
 
-        <div class="margin-top-small">
-            <select name="empresa/profesional">
-                <option value="empresa">Empresa</option>
-                <option value="profesional">Profesional</option>
-            </select>
-        </div>
-
-        <div class="margin-top-small">
-            <input type="submit" value="Registrarse"> <input type="reset">
-        </div>
-    </form>
 </body>
 
 </html>

@@ -44,3 +44,33 @@ ul.navbar {
 .list-inline li {
     display: inline;
 }
+
+#main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#article {
+    float: left;
+    padding: 30px;
+}
+
+#aside {
+    float: left;
+    padding: 30px;
+}
+
+#footer {
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid>.width-1-2 {
+    padding: 30px;
+    vertical-align: middle;
+    align-content: center;
+}
