@@ -1,45 +1,242 @@
-/* BODY GENERAL */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lora');
 
-body {
-    max-width: 1900px;
-    margin: auto;
-    padding: 0px 30px;
-}
+/****
+STYLE GUIDE
+0. RESET
+1. LAYOUT
+    0. MARGINS
+    1. LIST
+    2. GRID
+    3. TEXT
+2. NAVBAR
+3. SPECIFICS ITEMS
+4. MEDIAQUERY
+-----------------
+*/
 
 
-/* NAVBAR */
+/* -------- 0. RESET -------- */
 
-ul.navbar {
-    list-style-type: none;
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background: #222;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-.navbar li {
-    float: left;
-}
 
-.navbar li a {
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
-    padding: 15px 16px;
-    color: #fff;
-    text-decoration: none;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* -------- 1. LAYOUT -------- */
+
+body {
     text-align: center;
+    font: 1rem/1 'Roboto';
+    background: rgb(6, 1, 48);
+    max-width: 2200px;
+    margin: auto;
 }
 
-.navbar li a:hover {
-    background: #ddd;
-    color: #222;
+div.wrapper {
+    text-align: left;
+    background: white;
+    padding: 30px;
+    max-width: 2200px;
+    margin: auto;
+    font-family: 'Lora', serif;
+}
+
+h1,
+.h1 {
+    font-size: 4rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 10px 0px;
+}
+
+h2,
+.h2 {
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 10px 0px;
+}
+
+section {
+    margin-top: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 
-/*GENERAL*/
+/* ---- 0. MARGINS ---- */
 
-.margin-top-small {
+.margin-small-top {
     margin-top: 8px;
 }
+
+.margin-top {
+    margin-top: 16px;
+}
+
+.margin-large-top {
+    margin-top: 22px;
+}
+
+.margin-small-bottom {
+    margin-bottom: 8px;
+}
+
+.margin-bottom {
+    margin-bottom: 16px;
+}
+
+.margin-large-bottom {
+    margin-bottom: 22px;
+}
+
+.margin-remove-top {
+    margin-top: 0;
+}
+
+.margin-remove-bottom {
+    margin-top: 0;
+}
+
+
+/* ---- 1. LIST ---- */
 
 .list li {
     margin-top: 10px;
@@ -54,9 +251,116 @@ ul.navbar {
     display: inline;
 }
 
+
+/* ---- 2. GRID ---- */
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid>.width-1-2 {
+    padding: 30px;
+    vertical-align: middle;
+    align-content: center;
+}
+
+
+/* ---- 3. TEXT ---- */
+
+.text-center {
+    text-align: center;
+}
+
+.text-middle {
+    display: flex;
+    align-items: center;
+}
+
+
+/* -------- 2. NAVBAR -------- */
+
+nav {
+    overflow: hidden;
+    background: #000;
+    width: 100%
+}
+
+ul.navbar,
+ul.navbar-content {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    padding: 15px 15px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li a:hover,
+.navbar-content li a:hover {
+    background: #ddd;
+    color: #222;
+}
+
+.navbar-content li {
+    float: right;
+}
+
+.navbar-content li a {
+    text-align: center;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* -------- 3. SPECIFICS ITEMS -------- */
+
+#header-img {
+    background-image: url(../image/pexels-photo.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+#header-text {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
 #main {
     display: grid;
     grid-template-columns: auto auto auto;
+}
+
+#top-a {
+    margin-top: 0;
 }
 
 #article {
@@ -74,39 +378,52 @@ ul.navbar {
     width: 100%;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
+
+/* -------- 4. MEDIAQUERY -------- */
+
+@media screen and (max-device-width: 1024px) {
+    .navbar-content li a {
+        display: none;
+    }
 }
 
-.grid>.width-1-2 {
-    padding: 30px;
-    vertical-align: middle;
-    align-content: center;
+@media screen and (max-device-width: 780px) {
+    h1,
+    .h1 {
+        font-size: 3rem;
+        font-family: 'Raleway', sans-serif;
+        margin: 10px 0px;
+    }
+    h2,
+    .h2 {
+        font-size: 2rem;
+        font-family: 'Raleway', sans-serif;
+        margin: 10px 0px;
+    }
+    .grid {
+        display: block;
+    }
+    .grid>.width-1-2 {
+        text-align: left;
+        padding: inherit;
+    }
+    #article {
+        float: left;
+        padding: inherit;
+    }
 }
 
-.text-center {
-    text-align: center;
-}
-
-.text-middle {
-    vertical-align: middle;
-}
-
-#header-img {
-    background-image: url(../image/pexels-photo.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-}
-
-#header-text {
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    width: 100%;
-    align-content: center;
+@media screen and (max-device-width: 480px) {
+    h1,
+    .h1 {
+        font-size: 32px;
+        font-family: 'Raleway', sans-serif;
+        margin: 10px 0px;
+    }
+    h2,
+    .h2 {
+        font-size: 24px;
+        font-family: 'Raleway', sans-serif;
+        margin: 10px 0px;
+    }
 }
