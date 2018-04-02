@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
 /****
 STYLE GUIDE
@@ -171,37 +171,99 @@ body {
 div.wrapper {
     text-align: left;
     background: white;
-    padding: 30px;
     max-width: 2200px;
     margin: auto;
-    font-family: 'Lora', serif;
+    font-family: 'Titillium Web', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: 'Raleway', sans-serif;
 }
 
 h1,
 .h1 {
     font-size: 4rem;
-    font-family: 'Raleway', sans-serif;
     margin: 10px 0px;
 }
 
 h2,
 .h2 {
     font-size: 3rem;
-    font-family: 'Raleway', sans-serif;
+    margin: 10px 0px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 25px;
     margin: 10px 0px;
 }
 
 section {
-    margin-top: 20px;
+    padding: 30px;
+}
+
+section.full-container {
+    padding: 0px;
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-middle {
+    align-items: center;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-space-between {
+    align-content: space-between;
+}
+
+.flex-space-around {
+    align-content: space-around;
 }
 
 
 /* ---- 0. MARGINS ---- */
+
+.margin-small {
+    margin: 8px;
+}
+
+.margin {
+    margin: 16px;
+}
+
+.margin-large {
+    margin: 22px;
+}
+
+.margin-remove {
+    margin: 0;
+}
 
 .margin-small-top {
     margin-top: 8px;
@@ -213,6 +275,10 @@ img {
 
 .margin-large-top {
     margin-top: 22px;
+}
+
+.margin-remove-top {
+    margin-top: 0;
 }
 
 .margin-small-bottom {
@@ -227,16 +293,127 @@ img {
     margin-bottom: 22px;
 }
 
-.margin-remove-top {
-    margin-top: 0;
-}
-
 .margin-remove-bottom {
     margin-top: 0;
 }
 
+.margin-small-left {
+    margin-left: 8px;
+}
 
-/* ---- 1. LIST ---- */
+.margin-left {
+    margin-left: 16px;
+}
+
+.margin-large-left {
+    margin-left: 22px;
+}
+
+.margin-remove-left {
+    margin-top: 0;
+}
+
+.margin-small-right {
+    margin-right: 8px;
+}
+
+.margin-right {
+    margin-right: 16px;
+}
+
+.margin-large-right {
+    margin-right: 22px;
+}
+
+.margin-remove-right {
+    margin-right: 0;
+}
+
+
+/* ---- 1. PADDINGS ---- */
+
+.padding-small {
+    padding: 8px;
+}
+
+.padding {
+    padding: 16px;
+}
+
+.padding-large {
+    padding: 22px;
+}
+
+.padding-remove {
+    padding: 0;
+}
+
+.padding-small-top {
+    padding-top: 8px;
+}
+
+.padding-top {
+    padding-top: 16px;
+}
+
+.padding-large-top {
+    padding-top: 22px;
+}
+
+.padding-remove-top {
+    padding-top: 0;
+}
+
+.padding-small-bottom {
+    padding-bottom: 8px;
+}
+
+.padding-bottom {
+    padding-bottom: 16px;
+}
+
+.padding-large-bottom {
+    padding-bottom: 22px;
+}
+
+.padding-remove-bottom {
+    padding-top: 0;
+}
+
+.padding-small-left {
+    padding-left: 8px;
+}
+
+.padding-left {
+    padding-left: 16px;
+}
+
+.padding-large-left {
+    padding-left: 22px;
+}
+
+.padding-remove-left {
+    padding-top: 0;
+}
+
+.padding-small-right {
+    padding-right: 8px;
+}
+
+.padding-right {
+    padding-right: 16px;
+}
+
+.padding-large-right {
+    padding-right: 22px;
+}
+
+.padding-remove-right {
+    padding-right: 0;
+}
+
+
+/* ---- 2. LIST ---- */
 
 .list li {
     margin-top: 10px;
@@ -252,29 +429,105 @@ img {
 }
 
 
-/* ---- 2. GRID ---- */
+/* ---- 3. GRID ---- */
 
 .grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
 }
 
-.grid>.width-1-2 {
+.grid>* {
     padding: 30px;
     vertical-align: middle;
     align-content: center;
 }
 
 
-/* ---- 3. TEXT ---- */
+/* ---- 4. TEXT ---- */
 
 .text-center {
     text-align: center;
 }
 
-.text-middle {
-    display: flex;
-    align-items: center;
+.text-first {
+    color: #AD7CE0;
+}
+
+.text-second {
+    color: #A17D00;
+}
+
+.text-third {
+    color: #FFEF00;
+}
+
+.text-forth {
+    color: #FFC600;
+}
+
+.text-fifth {
+    color: #36006D;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: #000;
+}
+
+
+/* ---- 5. PANEL BOX ---- */
+
+.panel-box {
+    background-color: #111;
+    color: #fff;
+    padding: 30px;
+    text-shadow: 1px 1px 2px #222
+}
+
+.panel-box-first {
+    background-color: #777;
+}
+
+.panel-box-second {
+    background-color: #36006D;
+}
+
+.panel-box-third {
+    background-color: #8C84E2;
+}
+
+.panel-box-forth {
+    background-color: #1A0ABC;
+}
+
+.panel-box-fifth {
+    background-color: #36006D;
+}
+
+.panel-box-sixth {
+    background-color: #FFC600;
+}
+
+
+/* ---- 6. BACKGROUNDS ---- */
+
+.first-background {
+    background-color: #0A0070;
+    color: #fff;
+}
+
+.second-background {
+    background-color: #111;
+    color: #fff;
+}
+
+.overlay-background {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-shadow: 1px 1px 2px #111;
 }
 
 
@@ -407,9 +660,8 @@ ul.navbar-content {
         text-align: left;
         padding: inherit;
     }
-    #article {
-        float: left;
-        padding: inherit;
+    #aside {
+        display: none;
     }
 }
 
