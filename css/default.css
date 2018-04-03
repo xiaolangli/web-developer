@@ -162,7 +162,8 @@ table {
 
 body {
     text-align: center;
-    font: 1rem/1 'Roboto';
+    font: 1rem/1 'Titillium Web', 'Roboto', serif;
+    ;
     background: rgb(6, 1, 48);
     max-width: 2200px;
     margin: auto;
@@ -209,6 +210,10 @@ p {
     margin: 10px 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 section {
     padding: 30px;
 }
@@ -244,6 +249,14 @@ img {
 
 .flex-space-around {
     align-content: space-around;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-start {
+    justify-content: flex-start;
 }
 
 
@@ -524,10 +537,26 @@ img {
     color: #fff;
 }
 
+.second-background a {
+    color: #8C84E2;
+}
+
+.second-background a:hover {
+    color: #ddd;
+    text-decoration: underline #FFC600;
+}
+
 .overlay-background {
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     text-shadow: 1px 1px 2px #111;
+}
+
+
+/* ---- 7. WIDTHS ---- */
+
+.width-100 {
+    width: 100%;
 }
 
 
@@ -641,6 +670,9 @@ ul.navbar-content {
 }
 
 @media screen and (max-device-width: 780px) {
+    body {
+        margin-bottom: 70px;
+    }
     h1,
     .h1 {
         font-size: 3rem;
@@ -662,6 +694,12 @@ ul.navbar-content {
     }
     #aside {
         display: none;
+    }
+    #toolbar {
+        position: fixed;
+        bottom: 0;
+        display: block;
+        padding: 5px 0px;
     }
 }
 

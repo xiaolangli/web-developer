@@ -6,15 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My Web</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/uikit.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/uikit-rtl.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/default.css" />
 </head>
 
 <body>
     <!-- Make a comment with pushing CRTL+K->C  -->
+    <!-- Menos texto y mas juego con las imágenes y las interacciones con el usuario  -->
     <header class="header">
-        <div id="toolbar" class="full-container second-background">
-            <p>telefono: xxx</p>
-        </div>
+        <section id="toolbar" class="full-container second-background width-100 flex flex-middle flex-space-between" style="min-height: 60px;">
+            <div class="padding-left">
+                <p class=" margin-remove">
+                    Teléfono: <a href="tel:541147653462">4765 - 3462</a>
+                </p>
+            </div>
+            <div class="padding-left">
+                <p class=" margin-remove">
+                    Celular: <a href="tel:5491158916270">15 5891 - 6270</a>
+                </p>
+            </div>
+        </section>
         <div id="header-img">
             <div id="header-text">
                 <h1 class="text-center">Gustavo Gabriel Grossi</h1>
@@ -97,17 +109,20 @@
                 eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
         </section>
         <section id="main" class="full-container second-background">
-            <article id="article" class="flex flex-middle uk-flex-wrap flex-space-between">
+            <div id="article" class="flex flex-middle flex-space-between">
                 <div>
                     <h2></h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugiat excepturi suscipit veniam nulla dolore repellendus! Magni numquam, veritatis maxime doloribus animi repellat, soluta tempore temporibus, quasi consequatur corrupti dignissimos!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugiat excepturi suscipit veniam nulla dolore repellendus! Magni numquam, veritatis maxime doloribus animi repellat, soluta tempore temporibus, quasi consequatur corrupti dignissimos! Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Quos fugiat excepturi suscipit veniam nulla dolore repellendus! Magni numquam, veritatis maxime doloribus animi repellat, soluta tempore temporibus, quasi consequatur corrupti
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugiat excepturi suscipit veniam nulla dolore repellendus! Magni numquam, veritatis maxime doloribus animi repellat, soluta tempore temporibus, quasi consequatur corrupti
+                        dignissimos! dignissimos!
                     </p>
                 </div>
-            </article>
-            <aside id="aside">
+            </div>
+            <div id="aside">
                 <img src="../image/pexels-photo-251225.jpeg">
-            </aside>
+            </div>
         </section>
         <section id="bottom-a" class="full-container">
             <div class="grid" style="min-height: 350px;">
@@ -158,6 +173,8 @@
             </section>
         </footer>
     </div>
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
 </body>
 
 </html>
