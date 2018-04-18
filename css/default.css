@@ -660,6 +660,29 @@ ul.navbar-content {
     width: 100%;
 }
 
+#body {
+    background: linear-gradient(to right, red, yellow);
+}
+
+#body>div {
+    height: 100vh;
+}
+
+#body * {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#volverAlInicio {
+    position: fixed;
+    bottom: 10%;
+    left: 5%;
+}
+
+#volverAlInicio.uk-button {
+    box-shadow: 1px 2px 5px #222;
+    color: #fff;
+}
+
 
 /* -------- 4. MEDIAQUERY -------- */
 
